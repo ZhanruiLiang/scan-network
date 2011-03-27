@@ -1,0 +1,32 @@
+scan-network is a simple IP range scanner.
+
+Notice: Root privigiles are needed to run scanner (for IMCP echo ping), im working on scanner which will not need root 
+privigiles
+
+scan-network v.1.0 for GNU/Linux. A simple local network scanner.
+Usage: scan-network [long GNU option] [option] from [option] to
+
+ --from range of ip adresses to start
+ --to range of ip adresses where to end
+ --ip mask of adresses to scan, for example 192.168.1, default 192.168.1
+ --help this screen
+
+
+Example of usage:
+ scan-network --from=100 --to=110 --ip=192.168.1
+
+webnull-gentoo-desktop scan-network # ./scan-network.py --from=100 --to=110 --ip 192.168.1
+Adresses to scan: 10
+Ping 192.168.1.{100 to 110}
+Delay: 1
+192.168.1.100 responds in 0.0013279914856
+192.168.1.101 not responding, offline
+192.168.1.102 responds in 0.000174999237061
+192.168.1.103 not responding, offline
+192.168.1.104 not responding, offline
+192.168.1.105 not responding, offline
+192.168.1.106 not responding, offline
+192.168.1.107 not responding, offline
+192.168.1.108 not responding, offline
+192.168.1.109 not responding, offline
+192.168.1.110 not responding, offline
