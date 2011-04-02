@@ -1,6 +1,11 @@
 scan-network is a simple IP range scanner.
 
-Notice: Root privigiles are needed to run scanner (for IMCP echo ping), im working on scanner which will not need root 
+Whats new?
+In 2.0 version there is no required root privigiles in Linux.
+There is still avaible 1.0 version for windows whih is using sockets.
+
+
+Notice for 1.0 version: Root privigiles are needed to run scanner (for IMCP echo ping), im working on scanner which will not need root 
 privigiles
 
 scan-network v.1.0 for GNU/Linux. A simple local network scanner.
@@ -13,7 +18,10 @@ Usage: scan-network [long GNU option] [option] from [option] to
 
 
 Example of usage:
- scan-network --from=100 --to=110 --ip=192.168.1
+ scan-network --from=100 --to=110 --ip=192.168.1.*
+ scan-network -f 100 -t 110 -i 192.168.1.*
+
+
 
 webnull-gentoo-desktop scan-network # ./scan-network.py --from=100 --to=110 --ip 192.168.1
 Adresses to scan: 10
