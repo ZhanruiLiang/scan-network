@@ -4,24 +4,31 @@ Whats new?
 In 2.0 version there is no required root privigiles in Linux.
 There is still avaible 1.0 version for windows whih is using sockets.
 
+Version 2.1:
++ Added option to scan from file and STDIN
++ Supports python threads (+ to speed)
+
 
 Notice for 1.0 version: Root privigiles are needed to run scanner (for IMCP echo ping), im working on scanner which will not need root 
 privigiles
 
-scan-network v.1.0 for GNU/Linux. A simple local network scanner.
+webnull@webnull-gentoo-desktop ~/Praca/python/scan-network $ ./scan-network.py --help
+scan-network v.2.1 for GNU/Linux. A simple local network scanner.
 Usage: scan-network [long GNU option] [option] from [option] to
 
- --from range of ip adresses to start
- --to range of ip adresses where to end
- --ip mask of adresses to scan, for example 192.168.1, default 192.168.1
+ --from (-f) range of ip adresses to start, default is 1
+ --to (-t) range of ip adresses where to end, default is 254
+ --ip (-i) mask of adresses to scan, for example 192.168.1, default 192.168.1.*
+ --delay (-d) delay between pings, default is 0 second
+ --load-file (-l) scan ip adresses listed in file
+ --stdin (-s) grab list of ip adresses from stdin
  --help this screen
 
-
 Example of usage:
- scan-network --from=100 --to=110 --ip=192.168.1.*
- scan-network -f 100 -t 110 -i 192.168.1.*
-
-
+ scan-network -f 100 -t 254 -i 192.168.1.* # scan range from 192.168.1.100 to 192.168.1.254
+ scan-network.py -l examples/example-ip-list # scan ip adresses from file
+ cat examples/example-ip-list | scan-network -s # scan from stdin
+ echo "192.168.1.100,192.168.1.101,192.168.1.102,192.168.1.103,192.168.1.104,192.168.1.107,192.168.1.108" | scan-network -s # scan from stdin
 
 webnull-gentoo-desktop scan-network # ./scan-network.py --from=100 --to=110 --ip 192.168.1
 Adresses to scan: 10
