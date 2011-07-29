@@ -45,3 +45,7 @@ Delay: 1
 192.168.1.108 not responding, offline
 192.168.1.109 not responding, offline
 192.168.1.110 not responding, offline
+
+Changelog:
+29.07.2011 (v.2.1):
+    + Added changelog and versioning informations

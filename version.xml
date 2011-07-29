@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<informations>
+	<platforms>
+		<platform>Linux</platform>
+		<platform>FreeBSD</platform>
+		<platform>OpenBSD</platform>
+		<platform>NetBSD</platform>
+		<platform>Solaris</platform>
+		<platform>Unix</platform>
+		<platform>Hurd</platform>
+		<platform>Haiku</platform>
+		<platform>BeOS</platform>
+	</platforms>
+
+	<version>2.1</version>
+	<mirrors>
+		<mirror>git://github.com/webnull/scan-network.git</mirror>
+	</mirrors>
+
+	<developers>
+		<developer>WebNuLL</developer>
+	</developers>
+
+	<contact>
+		<contact_im type="mail">webnull.www@gmail.com</contact_im>
+		<contact_im type="jabber">webnull@ubuntu.pl</contact_im>
+		<contact_im type="website">http://webnull.kablownia.org</contact_im>
+	</contact> 
+</informations>
