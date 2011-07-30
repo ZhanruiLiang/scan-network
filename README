@@ -47,5 +47,8 @@ Delay: 1
 192.168.1.110 not responding, offline
 
 Changelog:
+30.07.2011 (v.2.2):
+    * Changed Python version from python2.7 to python
+
 29.07.2011 (v.2.1):
     + Added changelog and versioning informations

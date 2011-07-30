@@ -12,7 +12,7 @@
 		<platform>BeOS</platform>
 	</platforms>
 
-	<version>2.1</version>
+	<version>2.2</version>
 	<mirrors>
 		<mirror>git://github.com/webnull/scan-network.git</mirror>
 	</mirrors>
