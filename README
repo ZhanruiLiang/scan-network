@@ -48,6 +48,7 @@ Delay: 1
 
 Changelog:
 14.08.2011 (v.2.3) <webnull.www@gmail.com>:
+    * Moved from os.popen4 to subprocess.getoutput
     + Added support for Python 3
     + Handling exceptions from threads to notify user that he have not sufficient permissions
 
