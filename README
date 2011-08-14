@@ -47,6 +47,10 @@ Delay: 1
 192.168.1.110 not responding, offline
 
 Changelog:
+14.08.2011 (v.2.3) <webnull.www@gmail.com>:
+    + Added support for Python 3
+    + Handling exceptions from threads to notify user that he have not sufficient permissions
+
 30.07.2011 (v.2.2):
     * Changed Python version from python2.7 to python
 
