@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import sys,os,getopt,time, select, subprocess
+import sys,os,getopt,time, select, subprocess, commands
 from threading import Thread
 from IPy import IP
 
@@ -39,7 +39,7 @@ class PingThread(Thread):
 
     def run(self):
         try:
-            get = subprocess.getoutput("ping "+self.Adress+" -c 1")
+            get = commands.getoutput("ping "+self.Adress+" -c 1")
         except OSError:
             print("Cannot execute ping, propably you dont have enough permissions to create process")
             sys.exit(1)
